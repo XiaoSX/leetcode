@@ -1,30 +1,7 @@
 #  -*-  coding: utf-8  -*-
 
 
-def create_listnode(arr):
-    head = None
-    cur = None
-    for i in range(len(arr)):
-        node = ListNode(arr[i])
-        if head is None:
-            head = node
-        if cur is not None:
-            cur.next = node
-        cur = node
-    return head
-
-def print_listnode(listnode):
-    cur = listnode
-    ans = []
-    while cur is not None:
-        ans.append(cur.val)
-        cur = cur.next
-    print(ans)
-
-class ListNode:
-    def __init__(self, value):
-        self.val = value
-        self.next = None
+from titles.listnode import ListNode
 
 class Solution:
     def swapPairs(self, head):
