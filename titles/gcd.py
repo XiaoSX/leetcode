@@ -15,3 +15,7 @@ def gcd(a, b):
     :return:
     """
     return a if b == 0 else gcd(b, a % b)
+
+
+if __name__ == '__main__':
+    print(gcd(3, 10))
